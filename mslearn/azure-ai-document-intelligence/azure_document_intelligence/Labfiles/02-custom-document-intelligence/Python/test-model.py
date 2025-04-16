@@ -3,7 +3,7 @@ from azure.ai.formrecognizer import DocumentAnalysisClient
 from dotenv import load_dotenv
 import os
 
-# Get configuration settings 
+# Get configuration settings
 load_dotenv()
 endpoint = os.getenv("DOC_INTELLIGENCE_ENDPOINT")
 key = os.getenv("DOC_INTELLIGENCE_KEY")
