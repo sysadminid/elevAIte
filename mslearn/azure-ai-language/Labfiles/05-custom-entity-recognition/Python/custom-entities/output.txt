@@ -1,0 +1,9 @@
+$ py custom-entities.py
+test1.txt
+        Entity 'Bluetooth earbuds' has category 'ItemForSale' with confidence score of '0.99'
+        Entity '$100' has category 'Price' with confidence score of '0.98'
+        Entity 'Sacramento, CA' has category 'Location' with confidence score of '0.99'
+test2.txt
+        Entity 'Dog harness' has category 'ItemForSale' with confidence score of '1.0'
+        Entity '$20' has category 'Price' with confidence score of '1.0'
+        Entity 'Tucson, AZ' has category 'Location' with confidence score of '1.0'
