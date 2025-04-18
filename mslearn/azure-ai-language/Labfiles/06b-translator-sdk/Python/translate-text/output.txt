@@ -1,0 +1,8 @@
+$ py translate.py
+137 languages supported.
+(See https://learn.microsoft.com/azure/ai-services/translator/language-support#translation)
+Enter a target language code for translation (for example, 'en'):
+id
+Enter text to translate ('quit' to exit): Hello, machine learning is the subset of artificial intelligence
+'Hello, machine learning is the subset of artificial intelligence' was translated from en to id as 'Halo, pembelajaran mesin adalah bagian dari kecerdasan buatan' with confidence score 0.94.
+Enter text to translate ('quit' to exit): quit
