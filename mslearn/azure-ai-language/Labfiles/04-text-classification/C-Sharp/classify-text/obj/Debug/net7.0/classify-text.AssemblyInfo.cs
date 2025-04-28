@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("classify-text")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a39cc33d35ec08fb700182b94226e113b3ab782c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5dc23521b8a69f9465bdda9923a5250c7544812")]
 [assembly: System.Reflection.AssemblyProductAttribute("classify-text")]
 [assembly: System.Reflection.AssemblyTitleAttribute("classify-text")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
