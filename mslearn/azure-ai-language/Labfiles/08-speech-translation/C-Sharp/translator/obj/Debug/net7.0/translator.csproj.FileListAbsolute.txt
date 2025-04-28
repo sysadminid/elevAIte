@@ -1,0 +1,6 @@
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/08-speech-translation/C-Sharp/translator/obj/Debug/net7.0/translator.csproj.AssemblyReference.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/08-speech-translation/C-Sharp/translator/obj/Debug/net7.0/translator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/08-speech-translation/C-Sharp/translator/obj/Debug/net7.0/translator.AssemblyInfoInputs.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/08-speech-translation/C-Sharp/translator/obj/Debug/net7.0/translator.AssemblyInfo.cs
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/08-speech-translation/C-Sharp/translator/obj/Debug/net7.0/translator.csproj.CoreCompileInputs.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/08-speech-translation/C-Sharp/translator/obj/Debug/net7.0/translator.sourcelink.json
