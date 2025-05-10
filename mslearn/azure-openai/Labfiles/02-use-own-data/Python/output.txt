@@ -1,0 +1,135 @@
+# If context exist in grounded data
+
+$ python3 Python/ownData.py
+
+Enter a question:
+Tell me about London
+{
+  "id": "f09542fb-3baa-4822-82a7-8df243f9a3da",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "London is the capital and most populous city of England and the United Kingdom, located on the River Thames in the southeast of Great Britain. It has been a significant settlement for over two millennia, originally founded by the Romans, who named it Londinium. The ancient core of London, known as the City of London, retains its medieval boundaries of 1.12 square miles. \n\nSince the 19th century, the term \"London\" has also referred to the larger metropolitan area surrounding this core, which is now known as Greater London. This area is governed by the Mayor of London and the London Assembly. \n\nLondon is popular for various activities, including leisure, outdoor pursuits, historical exploration, and arts and culture. The best time to visit is from June to August, with average temperatures ranging from 56 to 67°F and average precipitation of 1.9 inches [doc2]. \n\nFor accommodation, Margie's Travel offers several options in London, including:\n- **The Buckingham Hotel**: Close to major sights like Buckingham Palace and Trafalgar Square.\n- **The City Hotel**: Luxury rooms near Tower Bridge and the Tower of London.\n- **The Kensington Hotel**: Budget accommodation near Earl's Court [doc2].",
+        "refusal": null,
+        "role": "assistant",
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "end_turn": true,
+        "context": {
+          "citations": [
+            {
+              "content": "Wherever you want to go, Margie’s Travel can get you there! \n\nMargie’s Travel is a world-leading travel agency, combining international reach with local \n\nexpertise. Just tell us where you want to go, and we can arrange: \n\n• Flights \n\n• Accommodation \n\n• Transfers \n\n• Visas \n\n• Currency Exchange \n\n• Excursions \n\n \nWhere We Go \nWhile we can arrange travel to anywhere \nworldwide, we specialize in trips to: \n\n• Dubai \n\n• Las Vegas \n\n• London \n\n• New York \n\n• San Francisco \n\nWho We Are \nMargie’s Travel employs some of the \nbest travel experts in the world. Our \nleadership team consists of: \n\n• Marjorie Long (CEO) \n\n• Logan Reid (CFO) \n\n• Emma Luffman (CTO) \n\n• Deepak Nadar (Strategic Director) \n\n \n\nTo learn more about us, visit our website at www.margiestravel.com",
+              "title": "Margies Travel Company Info.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "Margie’s Travel Presents… \n\nLondon \nLondon is the capital and \n\nmost populous city of \n\nEngland and the United \n\nKingdom. Standing on the \n\nRiver Thames in the south \n\neast of the island of Great \n\nBritain, London has been \n\na major settlement for two \n\nmillennia. It was founded \n\nby the Romans, who \n\nnamed it Londinium. \n\nLondon's ancient core, the \n\nCity of London, largely \n\nretains its 1.12-square-\n\nmile medieval boundaries. \n\nSince at least the 19th century, London has also referred to the metropolis around this core, \n\nhistorically split between Middlesex, Essex, Surrey, Kent, and Hertfordshire, which today largely \n\nmakes up Greater London, governed by the Mayor of London and the London Assembly. \n\n \n\nMostly popular for: \nLeisure, Outdoors, Historical, Arts \n&amp; Culture \n \nBest time to visit: \nJun-Aug  \nAverag Precipitation: 1.9 in \nAverage Temperature: 56-67°F  \n\n \n\n \nLondon Hotels \n\nMargie’s Travel offers the following accommodation options in London: \n\nThe Buckingham Hotel \n\nComfortable hotel close to major sights like Buckingham Palace, Regent’s Park, and Trafalgar \n\nSquare. \n\nThe City Hotel \n\nLuxury rooms in the city, within walking distance of Tower Bridge and the Tower of London.. \n\nThe Kensington Hotel \n\nBudget accommodation near Earl’s Court. \n\nTo book your trip to London, visit www.margiestravel.com",
+              "title": "London Brochure.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            }
+          ],
+          "intent": "[\"Tell me about London\", \"Information about London\", \"London overview\"]"
+        }
+      }
+    }
+  ],
+  "created": 1746889145,
+  "model": "gpt-4o-mini",
+  "object": "extensions.chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_ded0d14823",
+  "usage": {
+    "completion_tokens": 267,
+    "prompt_tokens": 2909,
+    "total_tokens": 3176,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null
+  }
+}
+
+
+
+# If context doesn't exist in grounded data
+$ python3 Python/ownData.py
+
+Enter a question:
+Tell me about Banjarbaru
+{
+  "id": "88b0dfa9-b7bb-47d1-9c2d-de28f002cd88",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "The requested information is not available in the retrieved data. Please try another query or topic.",
+        "refusal": null,
+        "role": "assistant",
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null,
+        "end_turn": true,
+        "context": {
+          "citations": [
+            {
+              "content": "Margie’s Travel Presents… \n\nLondon \nLondon is the capital and \n\nmost populous city of \n\nEngland and the United \n\nKingdom. Standing on the \n\nRiver Thames in the south \n\neast of the island of Great \n\nBritain, London has been \n\na major settlement for two \n\nmillennia. It was founded \n\nby the Romans, who \n\nnamed it Londinium. \n\nLondon's ancient core, the \n\nCity of London, largely \n\nretains its 1.12-square-\n\nmile medieval boundaries. \n\nSince at least the 19th century, London has also referred to the metropolis around this core, \n\nhistorically split between Middlesex, Essex, Surrey, Kent, and Hertfordshire, which today largely \n\nmakes up Greater London, governed by the Mayor of London and the London Assembly. \n\n \n\nMostly popular for: \nLeisure, Outdoors, Historical, Arts \n&amp; Culture \n \nBest time to visit: \nJun-Aug  \nAverag Precipitation: 1.9 in \nAverage Temperature: 56-67°F  \n\n \n\n \nLondon Hotels \n\nMargie’s Travel offers the following accommodation options in London: \n\nThe Buckingham Hotel \n\nComfortable hotel close to major sights like Buckingham Palace, Regent’s Park, and Trafalgar \n\nSquare. \n\nThe City Hotel \n\nLuxury rooms in the city, within walking distance of Tower Bridge and the Tower of London.. \n\nThe Kensington Hotel \n\nBudget accommodation near Earl’s Court. \n\nTo book your trip to London, visit www.margiestravel.com",
+              "title": "London Brochure.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "Wherever you want to go, Margie’s Travel can get you there! \n\nMargie’s Travel is a world-leading travel agency, combining international reach with local \n\nexpertise. Just tell us where you want to go, and we can arrange: \n\n• Flights \n\n• Accommodation \n\n• Transfers \n\n• Visas \n\n• Currency Exchange \n\n• Excursions \n\n \nWhere We Go \nWhile we can arrange travel to anywhere \nworldwide, we specialize in trips to: \n\n• Dubai \n\n• Las Vegas \n\n• London \n\n• New York \n\n• San Francisco \n\nWho We Are \nMargie’s Travel employs some of the \nbest travel experts in the world. Our \nleadership team consists of: \n\n• Marjorie Long (CEO) \n\n• Logan Reid (CFO) \n\n• Emma Luffman (CTO) \n\n• Deepak Nadar (Strategic Director) \n\n \n\nTo learn more about us, visit our website at www.margiestravel.com",
+              "title": "Margies Travel Company Info.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "Margie’s Travel Presents… \n\nDubai \n \n\n \n\nDubai is the largest and most populous city in the United \n\nArab Emirates. It is located on the southeast coast of the \n\nPersian Gulf and is the capital of the Emirate of Dubai, \n\none of the seven emirates that make up the country. Abu \n\nDhabi and Dubai are the only two emirates to have veto \n\npower over critical matters of national importance in the \n\ncountry's Federal Supreme Council. The city of Dubai is \n\nlocated on the emirate's northern coastline and heads the \n\nDubai-Sharjah-Ajman metropolitan area. \n\n \n\n \n\n \n\n \n\nDubai Hotels \n\nMargie’s Travel offers the following accommodation \n\noptions in Dubai: \n\nThe Creek Hotel \n\nFriendly boutique hotel within the heart of the bustling \n\nDubai Creek area. \n\nThe Deira Hotel \n\nFamily-run hotel in Dubai’s traditional commercial \n\ncenter. \n\nThe Lost City Hotel \n\nLuxurious accommodation in Dubai, with onsite \n\nwaterpark and aquarium. \n\n \n\n \n\n \n\nTo book your trip to Dubai, visit www.margiestravel.com",
+              "title": "Dubai Brochure.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "Margie’s Travel Presents… \n\nSan Francisco \nSan Francisco, officially the City and County of San \n\nFrancisco, is the cultural, commercial, and financial \n\ncenter of Northern California. It is the birthplace of \n\nthe United Nations. Located at the north end of the \n\nSan Francisco Peninsula, San Francisco is about \n\n47.9 square miles in area, making it the smallest \n\ncounty—and the only consolidated city-county—\n\nwithin the state of California. With a density of about \n\n18,581 people per square mile, San Francisco is the \n\nmost densely settled large city in California and the \n\nsecond-most densely populated major city in the \n\nUnited States after New York City. San Francisco is \n\nthe fourth-most populous city in California, after Los \n\nAngeles, San Diego, and San Jose, and the 13th-\n\nmost populous city in the United States—with a \n\ncensus-estimated 2016 population of 870,887. The \n\ncity and its surrounding areas are known as the San \n\nFrancisco Bay Area, and are a part of the larger \n\nOMB-designated San Jose-San Francisco-Oakland \n\ncombined statistical area, the fifth most populous in \n\nthe nation with an estimated population of 8.7 million. \n\n \n\nSan Francisco Hotels \n\nMargie’s Travel offers the following accommodation options \n\nin San Francisco: \n\nThe Lombard Hotel \n\nFriendly, family-run hotel within easy walking distance to \n\npopular sights, including the Golden Gate Bridge and the \n\nPresidio. Free Parking. \n\nThe Wharf Hotel \n\nGreat value accommodation in the heart of the vibrant \n\nFisherman’s Wharf area. Continental Breakfast included. \n\n \n\n \n\n \n\n \n\nTo book your trip to San Francisco, visit www.margiestravel.com",
+              "title": "San Francisco Brochure.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            },
+            {
+              "content": "Margie’s Travel Presents… \n\nNew York \nThe City of New York, often called New York City or simply \n\nNew York, is the most populous city in the United States. \n\nWith an estimated 2015 population of 8,550,405 distributed \n\nover a land area of about 302.6 square miles, New York \n\nCity is also the most densely populated major city in the \n\nUnited States. Located at the southern tip of the state of \n\nNew York, the city is the center of the New York \n\nmetropolitan area, one of the most populous urban \n\nagglomerations in the world. A global power city, New York \n\nCity exerts a significant impact upon commerce, finance, \n\nmedia, art, fashion, research, technology, education, and \n\nentertainment, its fast pace defining the term New York \n\nminute. Home to the headquarters of the United Nations, \n\nNew York is an important center for international diplomacy \n\nand has been described as the cultural and financial capital \n\nof the world. \n\n \n\nNew York Hotels \n\nMargie’s Travel offers the following accommodation options \n\nin New York: \n\nThe Manhattan Hotel \n\nStay in the heart of New York City, within an easy walk to \n\nTimes Square and Broadway. \n\nThe Grand Central Hotel \n\nComfortable mid-town hotel. Close to Grand Central \n\nStation, the Chrysler Building, and the Empire State \n\nBuilding. \n\nThe Park Hotel \n\nLuxurious accommodation in upper Manhattan, with views \n\nof Central Park. \n\n \n\n \n\nTo book your trip to New York, visit www.margiestravel.com",
+              "title": "New York Brochure.pdf",
+              "url": null,
+              "filepath": null,
+              "chunk_id": "0"
+            }
+          ],
+          "intent": "[\"Tell me about Banjarbaru\", \"Information on Banjarbaru\", \"History and culture of Banjarbaru\"]"
+        }
+      }
+    }
+  ],
+  "created": 1746889195,
+  "model": "gpt-4o-mini",
+  "object": "extensions.chat.completion",
+  "service_tier": null,
+  "system_fingerprint": "fp_ded0d14823",
+  "usage": {
+    "completion_tokens": 44,
+    "prompt_tokens": 4120,
+    "total_tokens": 4164,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null
+  }
+}
