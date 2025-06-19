@@ -4,29 +4,39 @@ import base64
 from pathlib import Path
 
 # Add references
+from dotenv import load_dotenv
+from azure.identity import DefaultAzureCredential
+from azure.ai.projects import AIProjectClient
+from azure.ai.inference.models import (
+     SystemMessage,
+     UserMessage,
+     TextContentItem,
+     ImageContentItem,
+     ImageUrl,
+)
 
 
-def main(): 
+def main():
 
     # Clear the console
     os.system('cls' if os.name=='nt' else 'clear')
-        
-    try: 
-    
-        # Get configuration settings 
+
+    try:
+
+        # Get configuration settings
         load_dotenv()
         project_connection = os.getenv("PROJECT_CONNECTION")
         model_deployment =  os.getenv("MODEL_DEPLOYMENT")
 
 
-
         # Initialize the project client
+        project_client = AIProjectClient.from_connection_string(
+            conn_str=project_connection,
+            credential=DefaultAzureCredential())
 
-        
 
         # Get a chat client
-        
-
+        chat_client = project_client.inference.get_chat_completions_client(model=model_deployment)
 
 
         # Initialize prompts
@@ -45,12 +55,46 @@ def main():
 
 
                 # Get a response to image input
-                    
+                # image_url = "https://raw.githubusercontent.com/microsoftlearning/mslearn-ai-vision/main/Labfiles/image-classification/test-images/IMG_TEST_1.jpg"
+                # image_format = "jpeg"
+                # request = Request(image_url, headers={"User-Agent": "Mozilla/5.0"})
+                # image_data = base64.b64encode(urlopen(request).read()).decode("utf-8")
+                # data_url = f"data:image/{image_format};base64,{image_data}"
 
+                # response = chat_client.complete(
+                #     messages=[
+                #         SystemMessage(system_message),
+                #         UserMessage(content=[
+                #             TextContentItem(text=prompt),
+                #             ImageContentItem(image_url=ImageUrl(url=data_url))
+                #         ]),
+                #     ]
+                # )
+                # print(response.choices[0].message.content)
+                script_dir = Path(__file__).parent  # Get the directory of the script
+                image_path = script_dir / 'mystery-fruit.jpeg'
+                mime_type = "image/jpeg"
+
+                # Read and encode the image file
+                with open(image_path, "rb") as image_file:
+                    base64_encoded_data = base64.b64encode(image_file.read()).decode('utf-8')
+
+                # Include the image file data in the prompt
+                data_url = f"data:{mime_type};base64,{base64_encoded_data}"
+                response = chat_client.complete(
+                    messages=[
+                        SystemMessage(system_message),
+                        UserMessage(content=[
+                            TextContentItem(text=prompt),
+                            ImageContentItem(image_url=ImageUrl(url=data_url))
+                        ]),
+                    ]
+                )
+                print(response.choices[0].message.content)
 
     except Exception as ex:
         print(ex)
 
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     main()

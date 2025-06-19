@@ -1,31 +1,45 @@
 import os
 from urllib.request import urlopen, Request
+# Add references
+from dotenv import load_dotenv
+from azure.identity import DefaultAzureCredential
+from azure.ai.projects import AIProjectClient
+from azure.ai.inference.models import (
+   SystemMessage,
+   UserMessage,
+   TextContentItem,
+   ImageContentItem,
+   ImageUrl,
+   AudioContentItem,
+   InputAudio,
+   AudioContentFormat,
+)
 import base64
 
 # Add references
 
 
-def main(): 
+def main():
 
     # Clear the console
     os.system('cls' if os.name=='nt' else 'clear')
-        
-    try: 
-    
-        # Get configuration settings 
+
+    try:
+
+        # Get configuration settings
         load_dotenv()
         project_connection = os.getenv("PROJECT_CONNECTION")
         model_deployment =  os.getenv("MODEL_DEPLOYMENT")
-        
+
         # Initialize the project client
 
-        
+
 
         ## Get a chat client
-        
+
 
         system_message = "You are an AI assistent in a grocery store that sells fruit."
-         
+
 
         # Loop until the user types 'quit'
         while True:
@@ -40,7 +54,7 @@ def main():
                     print("Getting a response to your prompt...")
 
                     # Get a response to text input
-                    
+
 
             elif input_text == "2":
                 prompt = input("Enter the prompt to accompany the image: ")
@@ -50,7 +64,7 @@ def main():
                     print("Getting a response to your prompt...")
 
                     # Get a response to image input
-                    
+
 
             elif input_text == "3":
                 prompt = input("Enter the prompt to accompany an audio recording of 'Me gustaría comprar 2 manzanas.': ")
@@ -60,7 +74,7 @@ def main():
                     print("Getting a response to your prompt...")
 
                     # Get a response to audio input
-                    
+
 
             else:
                 print("Please enter a valid value")
@@ -71,5 +85,5 @@ def main():
         print(ex)
 
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     main()
