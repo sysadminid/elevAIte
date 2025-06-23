@@ -22,9 +22,36 @@ class FlightBookingPlugin:
 
 
     # Create a plugin functiion with kernel function attributes
+    @kernel_function(description="Searches for available flights based on the destination and departure date in the format YYYY-MM-DD")
+    def search_flights(self, destination, departure_date):
+        # Filter flights based on destination
+        matching_flights = [
+            flight for flight in self.flights
+            if flight.Destination.lower() == destination.lower() and flight.DepartureDate == departure_date
+        ]
+        return matching_flights
 
 
     # Create a kernel function to book flights
+    @kernel_function(description="Books a flight based on the flight ID provided")
+    def book_flight(self, flight_id):
+        # Add logic to book a flight
+        flight = next((f for f in self.flights if f.Id == flight_id), None)
+
+        if flight is None:
+            return "Flight not found. Please provide a valid flight ID."
+
+        if flight.IsBooked:
+            return "You've already booked this flight."
+
+        flight.IsBooked = True
+        self.save_flights_to_file()
+
+        return (
+            f"Flight booked successfully! Airline: {flight.Airline}, "
+            f"Destination: {flight.Destination}, Departure: {flight.DepartureDate}, "
+            f"Price: ${flight.Price}."
+        )
 
 
 

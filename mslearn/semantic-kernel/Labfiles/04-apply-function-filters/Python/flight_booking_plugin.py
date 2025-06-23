@@ -30,7 +30,7 @@ class FlightBookingPlugin:
     @kernel_function(description="Books a flight based on the flight ID provided")
     def book_flight(self, flight_id):
         flight = next((f for f in self.flights if f.Id == flight_id), None)
-    
+
         if flight is None:
             return "Flight not found. Please provide a valid flight ID."
 
