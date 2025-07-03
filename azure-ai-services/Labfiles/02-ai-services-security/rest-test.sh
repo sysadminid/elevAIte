@@ -1,0 +1,1 @@
+curl -X POST "https://sofyan-ai-services.cognitiveservices.azure.com/text/analytics/v3.1/languages?'" -H "Content-Type: application/json" -H "Ocp-Apim-Subscription-Key: 4X3z2DntMWV9EBoPuFGaP0PuWFNz8BZ3FNjoAIo8JErlyLyBnyIoJQQJ99BEAC4f1cMXJ3w3AAAEACOGkz6N" --data-ascii "{'documents':[{'id':1,'text':'hello'}]}"

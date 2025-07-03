@@ -1,0 +1,6 @@
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/07b-speech/C-Sharp/speaking-clock/obj/Debug/net8.0/speaking-clock.csproj.AssemblyReference.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/07b-speech/C-Sharp/speaking-clock/obj/Debug/net8.0/speaking-clock.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/07b-speech/C-Sharp/speaking-clock/obj/Debug/net8.0/speaking-clock.AssemblyInfoInputs.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/07b-speech/C-Sharp/speaking-clock/obj/Debug/net8.0/speaking-clock.AssemblyInfo.cs
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/07b-speech/C-Sharp/speaking-clock/obj/Debug/net8.0/speaking-clock.csproj.CoreCompileInputs.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-language/Labfiles/07b-speech/C-Sharp/speaking-clock/obj/Debug/net8.0/speaking-clock.sourcelink.json

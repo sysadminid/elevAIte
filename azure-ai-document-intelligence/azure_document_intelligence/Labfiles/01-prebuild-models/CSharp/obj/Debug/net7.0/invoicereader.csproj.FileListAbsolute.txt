@@ -1,0 +1,6 @@
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-document-intelligence/azure_document_intelligence/Labfiles/01-prebuild-models/CSharp/obj/Debug/net7.0/invoicereader.csproj.AssemblyReference.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-document-intelligence/azure_document_intelligence/Labfiles/01-prebuild-models/CSharp/obj/Debug/net7.0/invoicereader.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-document-intelligence/azure_document_intelligence/Labfiles/01-prebuild-models/CSharp/obj/Debug/net7.0/invoicereader.AssemblyInfoInputs.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-document-intelligence/azure_document_intelligence/Labfiles/01-prebuild-models/CSharp/obj/Debug/net7.0/invoicereader.AssemblyInfo.cs
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-document-intelligence/azure_document_intelligence/Labfiles/01-prebuild-models/CSharp/obj/Debug/net7.0/invoicereader.csproj.CoreCompileInputs.cache
+/Users/ahmadsofyan/Workdir/elevAIte/mslearn/azure-ai-document-intelligence/azure_document_intelligence/Labfiles/01-prebuild-models/CSharp/obj/Debug/net7.0/invoicereader.sourcelink.json

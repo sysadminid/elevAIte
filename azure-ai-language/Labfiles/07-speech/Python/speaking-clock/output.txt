@@ -1,0 +1,4 @@
+$ py speaking-clock.py
+Ready to use speech service in: eastus
+What time is it?
+The time is 1:58

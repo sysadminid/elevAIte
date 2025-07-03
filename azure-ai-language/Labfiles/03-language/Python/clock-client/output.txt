@@ -1,0 +1,46 @@
+$ py clock-client.py
+
+Enter some text ("quit" to stop)
+What date is Sunday?
+view top intent:
+        top intent: GetDate
+        category: GetDate
+        confidence score: 0.96838105
+
+view entities:
+        category: Weekday
+        text: Sunday
+        confidence score: 1
+query: What date is Sunday?
+04/20/2025
+
+Enter some text ("quit" to stop)
+What day is 01/01/2025?
+view top intent:
+        top intent: GetDay
+        category: GetDay
+        confidence score: 0.9445568
+
+view entities:
+        category: Date
+        text: 01/01/2025
+        confidence score: 1
+query: What day is 01/01/2025?
+Wednesday
+
+Enter some text ("quit" to stop)
+What day is 04/15/2025?        
+view top intent:
+        top intent: GetDay
+        category: GetDay
+        confidence score: 0.95285004
+
+view entities:
+        category: Date
+        text: 04/15/2025
+        confidence score: 1
+query: What day is 04/15/2025?
+Tuesday
+
+Enter some text ("quit" to stop)
+quit
